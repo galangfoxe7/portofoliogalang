@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galang Bayu — Web Developer &amp; UI/UX Designer</title>
+  <meta name="description" content="Portofolio personal Galang Bayu - Frontend Developer &amp; Web Programmer yang berfokus pada pembuatan website modern, cepat, elegan, dan ramah pengguna.">
+  <meta name="keywords" content="web developer, frontend developer, portofolio, programmer, UI/UX, React, Laravel, Indonesia">
+  <meta name="author" content="Galang Bayu">
+
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:title" content="Galang Bayu — Web Developer &amp; UI/UX Designer">
+  <meta property="og:description" content="Portofolio personal modern, elegan, dan interaktif menampilkan keahlian, proyek, dan pengalaman.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Aksesibilitas: Skip Link -->
+  <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
+
+  <!-- 1. NAVBAR -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Navigasi Utama">
+      <div class="container navbar-inner">
+        <a href="#home" class="logo" aria-label="Beranda">Galang<span class="logo-dot">.</span></a>
+        
+        <ul class="nav-links" role="menubar">
+          <li role="none"><a href="#home" role="menuitem" class="nav-link active">Home</a></li>
+          <li role="none"><a href="#about" role="menuitem" class="nav-link">About</a></li>
+          <li role="none"><a href="#skills" role="menuitem" class="nav-link">Skills</a></li>
+          <li role="none"><a href="#projects" role="menuitem" class="nav-link">Projects</a></li>
+          <li role="none"><a href="#experience" role="menuitem" class="nav-link">Experience</a></li>
+          <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Let's Talk</a>
+
+        <!-- Hamburger Button untuk Mobile -->
+        <button class="hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="navbar__mobile-menu" role="menu">
+        <a href="#home" class="nav-link" role="menuitem">Home</a>
+        <a href="#about" class="nav-link" role="menuitem">About</a>
+        <a href="#skills" class="nav-link" role="menuitem">Skills</a>
+        <a href="#projects" class="nav-link" role="menuitem">Projects</a>
+        <a href="#experience" class="nav-link" role="menuitem">Experience</a>
+        <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- 2. HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-ambient" aria-hidden="true"></div>
+      
+      <div class="container hero-grid">
+        <!-- Kolom Konten Teks -->
+        <div class="hero-content fade-in">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Available for new projects
+          </div>
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Galang Bayu</h1>
+          <p class="hero-role">
+            <span class="typing-text">Frontend Developer</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-desc">
+            Saya mengembangkan aplikasi web modern dengan performa tinggi, desain antarmuka bersih, dan pengalaman pengguna yang intuitif. Terbiasa memecahkan masalah melalui pendekatan kode yang terstruktur.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Kolom Visual Avatar / Portrait Card -->
+        <div class="hero-visual fade-in">
+          <div class="portrait-card">
+            <div class="portrait-avatar-wrapper">
+              <img class="portrait-photo" src="fotosaya.jpeg" alt="Foto Galang Bayu" />
+            </div>
+            <div class="portrait-info">
+              <h3 class="portrait-name">Galang Bayu</h3>
+              <p class="portrait-role">Web Developer &amp; UI Enthusiast</p>
+              <div class="portrait-tags">
+                <span class="portrait-tag">React</span>
+                <span class="portrait-tag">Laravel</span>
+                <span class="portrait-tag">TypeScript</span>
+                <span class="portrait-tag">Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indikator Scroll Bawah -->
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT ME SECTION -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">Tentang Saya</p>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text fade-in">
+            <p>
+              Halo! Saya seorang mahasiswa Semester 7 di Institut Teknologi Adhi Tama Surabaya yang berdomisili di Sidoarjo. Ketertarikan saya pada dunia pemrograman dimulai sejak tahun pertama kuliah, dan sejak itu saya berfokus mendalami ekosistem pengembangan web modern.
+            </p>
+            <p>
+              Saya senang menerjemahkan ide bisnis dan desain visual ke dalam website yang responsif, cepat diakses, dan mudah dirawat. Saya selalu memperhatikan detail kode, aksesibilitas, dan hierarki visual agar setiap karya memberikan nilai nyata bagi penggunanya.
+            </p>
+            <p>
+              Selain mengerjakan tugas riset, saya aktif berkontribusi pada Himpunan Mahasiswa Sistem Informasi Kampus ITATS serta terus memperbarui wawasan tentang tren teknologi web terbaru.
+            </p>
+          </div>
+
+          <!-- Statistik Cards -->
+          <div class="about-stats fade-in">
+            <div class="stat-item">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Technologies Used</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Code Dedication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">Keahlian &amp; Perkakas</p>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">Daftar bahasa pemrograman, framework, database, dan alat bantu kerja yang saya gunakan secara reguler.</p>
+        </div>
+
+        <div class="skills-categories">
+          <!-- Kategori: Frontend Development -->
+          <div class="skills-category-group fade-in">
+            <h3 class="skill-category-title">Frontend Development</h3>
+            <div class="skill-grid">
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 3l1.8 17.5L12 22l6.2-1.5L20 3H4z"/>
+                  <path d="M7.5 7.5h9M8 11.5h8M8.5 15.5l3.5 1 3.5-1"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level">Semantic &amp; SEO</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 3l1.8 17.5L12 22l6.2-1.5L20 3H4z"/>
+                  <path d="M16 7.5H8l.5 4h7.5l-.8 5-3.2.9-3.2-.9-.2-2"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-level">Flexbox, Grid &amp; Animasi</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="3"/>
+                  <path d="M16 8v8M12 16c0-2-1-3-2.5-3"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level">ES6+, DOM &amp; Async</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <ellipse cx="12" cy="12" rx="10" ry="4"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-60 12 12)"/>
+                  <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">React</span>
+                  <span class="skill-level">Hooks, SPA &amp; State</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori: Backend Development -->
+          <div class="skills-category-group fade-in">
+            <h3 class="skill-category-title">Backend Development</h3>
+            <div class="skill-grid">
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6 2 10.5c0 3 2 5.5 5 7v4.5l3-2c.65.1 1.32.17 2 .17 5.52 0 10-3.98 10-8.67C22 6 17.52 2 12 2z"/>
+                  <path d="M9 10h6M9 14h4"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">PHP</span>
+                  <span class="skill-level">OOP &amp; MVC Concept</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 7l8-4 8 4-8 4-8-4z"/>
+                  <path d="M4 12l8 4 8-4"/>
+                  <path d="M4 17l8 4 8-4"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">Laravel</span>
+                  <span class="skill-level">REST API, Eloquent &amp; Auth</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M12 3v18M3 12h18"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-level">Express &amp; Server Scripts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori: Database -->
+          <div class="skills-category-group fade-in">
+            <h3 class="skill-category-title">Database</h3>
+            <div class="skill-grid">
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level">Query, Relational &amp; Indexing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori: Tools & Workflow -->
+          <div class="skills-category-group fade-in">
+            <h3 class="skill-category-title">Tools &amp; Workflow</h3>
+            <div class="skill-grid">
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="18" cy="18" r="3"/>
+                  <circle cx="6" cy="6" r="3"/>
+                  <circle cx="6" cy="18" r="3"/>
+                  <path d="M6 9v6M9 6h6a3 3 0 0 1 3 3v6"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-level">Version Control &amp; Branches</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-level">Collaboration &amp; CI/CD</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 7l8.5-5 8.5 5v10l-8.5 5L3 17V7z"/>
+                  <path d="M11.5 2v20M3 7l17 10M20 7L3 17"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-level">Productivity &amp; Extensions</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/>
+                  <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/>
+                  <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/>
+                  <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/>
+                  <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/>
+                </svg>
+                <div class="skill-info">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-level">Wireframing &amp; Prototyping</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROJECTS SECTION -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">Portofolio Karya</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Beberapa proyek web yang telah saya kembangkan dengan fokus pada fungsionalitas, performa, dan desain modern.</p>
+        </div>
+
+        <div class="project-grid">
+          <!-- Proyek 1: TaskFlow -->
+          <article class="project-card fade-in">
+            <div class="project-thumb">
+              <div class="project-browser-frame">
+                <div class="browser-header">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <div class="browser-body">
+                  <svg class="project-svg" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="TaskFlow UI Preview">
+                    <rect x="10" y="10" width="65" height="100" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+                    <rect x="85" y="10" width="65" height="100" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+                    <rect x="160" y="10" width="65" height="100" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+                    <rect x="16" y="24" width="53" height="26" rx="3" fill="rgba(124, 92, 252, 0.25)" stroke="rgba(124, 92, 252, 0.4)"/>
+                    <rect x="16" y="56" width="53" height="20" rx="3" fill="rgba(255,255,255,0.08)"/>
+                    <rect x="91" y="24" width="53" height="36" rx="3" fill="rgba(124, 92, 252, 0.15)"/>
+                    <rect x="166" y="24" width="53" height="22" rx="3" fill="rgba(34, 197, 94, 0.2)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">TaskFlow — Team Collab Board</h3>
+              <p class="project-desc">
+                Aplikasi manajemen tugas kolaboratif dengan pembaruan real-time, drag-and-drop board Kanban, serta manajemen hak akses tim untuk meningkatkan produktivitas proyek.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Socket.io</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                  Source Code
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyek 2: BudgetLens -->
+          <article class="project-card fade-in">
+            <div class="project-thumb">
+              <div class="project-browser-frame">
+                <div class="browser-header">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <div class="browser-body">
+                  <svg class="project-svg" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="BudgetLens UI Preview">
+                    <rect x="15" y="15" width="95" height="42" rx="4" fill="rgba(124, 92, 252, 0.15)" stroke="rgba(124, 92, 252, 0.3)"/>
+                    <rect x="125" y="15" width="95" height="42" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+                    <path d="M20 95 C 60 70, 90 90, 130 65 C 170 45, 195 60, 220 50" stroke="#7c5cfc" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <circle cx="130" cy="65" r="3.5" fill="#7c5cfc"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">BudgetLens — Finance Tracker</h3>
+              <p class="project-desc">
+                Aplikasi pelacak keuangan pribadi dengan visualisasi pengeluaran bulanan, integrasi grafik interaktif, dan kalkulator tabungan otomatis yang aman dan responsif.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                  Source Code
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyek 3: WeatherNow -->
+          <article class="project-card fade-in">
+            <div class="project-thumb">
+              <div class="project-browser-frame">
+                <div class="browser-header">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <div class="browser-body">
+                  <svg class="project-svg" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="WeatherNow UI Preview">
+                    <circle cx="70" cy="55" r="22" stroke="currentColor" stroke-width="2" fill="rgba(124, 92, 252, 0.15)"/>
+                    <path d="M70 20v6M70 84v6M35 55h6M99 55h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <rect x="120" y="30" width="95" height="12" rx="3" fill="rgba(255,255,255,0.2)"/>
+                    <rect x="120" y="50" width="65" height="10" rx="3" fill="rgba(255,255,255,0.1)"/>
+                    <rect x="120" y="70" width="80" height="10" rx="3" fill="rgba(255,255,255,0.1)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">WeatherNow — Forecast App</h3>
+              <p class="project-desc">
+                Dashboard prakiraan cuaca instan dengan integrasi OpenWeatherMap API, geolokasi otomatis, indeks kualitas udara, dan peralihan tema dinamis berdasarkan waktu.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">CSS Flexbox</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                  Source Code
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. EXPERIENCE & EDUCATION SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">Rekam Jejak</p>
+          <h2 class="section-title">Experience &amp; Education</h2>
+          <p class="section-subtitle">Perjalanan akademis dan pengalaman kerja praktis yang membentuk keahlian teknis saya saat ini.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2023 — Sekarang</span>
+              <h3 class="timeline-title">S1 Sistem Informasi</h3>
+              <span class="timeline-org">Institut Teknologi Adhi Tama Surabaya</span>
+              <p class="timeline-desc">
+                Fokus peminatan Rekayasa Perangkat Lunak. IPK: 3.47/4.00. Mata kuliah utama meliputi Algoritma &amp; Struktur Data, Pemrograman Web, Basis Data, dan Interaksi Manusia &amp; Komputer.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Mei 2026 — Agustus 2026</span>
+              <h3 class="timeline-title">Magang UI/UX</h3>
+              <span class="timeline-org">PT. Harian Disway</span>
+              <p class="timeline-desc">
+                Membuat prototype desain UI/UX untuk aplikasi mobile Harian Disway, termasuk wireframe, user flow, dan pengujian usability untuk meningkatkan pengalaman pengguna.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Agustus 2025 — Agustus 2026</span>
+              <h3 class="timeline-title">Ketua Himpunan Mahasiswa Sistem Informasi</h3>
+              <span class="timeline-org">Institut Teknologi Adhi Tama Surabaya</span>
+              <p class="timeline-desc">
+                Bertanggung jawab atas manajemen strategis organisasi, menyelaraskan kinerja program kerja antar divisi, serta memimpin tata kelola SDM.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Oktober 2022 — Maret 2023</span>
+              <h3 class="timeline-title">Admin Operasional dan Logistik</h3>
+              <span class="timeline-org">CV. Sena Raya Marine</span>
+              <p class="timeline-desc">
+                Bertanggung jawab atas administrasi penjualan dan pengiriman logistik ke Boncafé, meliputi pengelolaan Purchase Order (PO), penerbitan invoice, dan penyusunan surat jalan operasional untuk mendukung kelancaran rantai pasok perusahaan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">Hubungi Saya</p>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-subtitle">Tertarik untuk berkolaborasi, mendiskusikan peluang proyek, atau sekadar bertukar sapa? Silakan hubungi saya melalui form atau kontak di bawah.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Kontak -->
+          <div class="contact-info fade-in">
+            <a href="mailto:kenziezone.on332@gmail.com" class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 6L12 13 2 6"/>
+              </svg>
+              <div>
+                <span class="contact-item-label">Email Langsung</span>
+                <span class="contact-item-value">kenziezone.on332@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/galangfoxe7" class="contact-item" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <div>
+                <span class="contact-item-label">GitHub Repository</span>
+                <span class="contact-item-value">github.com/galangfoxe7</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/galang-bayu" class="contact-item" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">linkedin.com/in/galang-bayu</span>
+              </div>
+            </a>
+
+            <a href="https://instagram.com/galang_foxe7" class="contact-item" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+              <div>
+                <span class="contact-item-label">Instagram</span>
+                <span class="contact-item-value">@galang_foxe7</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Alex Pratama</span>
+        <span>&bull;</span>
+        <span class="footer-copy">&copy; <span class="current-year"></span> All rights reserved.</span>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials" aria-label="Tautan Media Sosial">
+          <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Profil Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+        </div>
+
+        <button class="back-to-top" aria-label="Kembali ke atas">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
